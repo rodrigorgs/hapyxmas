@@ -1,0 +1,107 @@
+                             ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+                             º HAPPY CHRISTMAS ºÛ
+                             ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹Û
+                             º Arquivo Leia-me ºÛ
+                             º  (Leia no DOS)  ºÛ
+                             ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼Û
+                              ßßßßßßßßßßßßßßßßßßß
+
+    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ³ Autor: Rodrigo Rocha Gomes e Souza                               ³
+    ³ Site oficial: http://www.geocities.com/Athens/7159/hapyxmas.htm  ³
+    ³ E-mail do autor: rod@svn.com.br                                  ³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+  Happy Christmas ‚ um jogo no estilo Super Mario, e que foi feito para o
+Natal de 1997. Esse jogo dispäe de alguns recursos que o deixam ainda mais
+divertido:
+
+     Gr ficos VGA (256 cores)
+     34 m£sicas de fundo muito boas (uma em cada fase)
+     Efeitos sonoros
+     Mensagens de Natal para quem chega ao final
+
+  Se vocˆ copiou esse jogo de um amigo, veja as vantagens de uma registra‡Æo:
+
+     Vocˆ poder  optar por receber fases novas, a cada vez que elas surgirem
+      (nesse caso, ‚ recomend vel que vocˆ tenha um e-mail) GRµTIS!!!
+     Vocˆ receber  tamb‚m cat logos com novos lan‡amentos da minha softhouse
+      (ainda nÆo tem um nome definido) GRµTIS!!!
+     Vocˆ ter  um desconto na compra do Happy Christmas 98.
+     Se surgir uma versÆo em portuguˆs do jogo, vocˆ poder  atualiz -la
+      GRµTIS!!!
+     A registra‡Æo custa apenas R$ 4,99.
+
+  Se vocˆ estiver interessado em registrar o jogo, me mande um e-mail
+(rod@svn.com.br).
+
+                             ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+                             ºINSTRU€åES DE USO ºÛ
+                             ºDO EDITOR DE FASESºÛ
+                             ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼Û
+                              ßßßßßßßßßßßßßßßßßßßß
+  Essa versÆo do Happy Christmas cont‚m um editor de fases. Isso significa
+que, se vocˆ se cansar das fases que j  vˆm com o jogo, vocˆ pode fazer as
+suas pr¢prias fases! Pense nas possibilidades:
+
+   Vocˆ pode organizar com seus amigos uma competi‡Æo para ver que faz a
+    fase mais dif¡cil.
+   Vocˆ pode fazer um tanto de fases e depois vendˆ-las.
+   Suas fases poderÆo ser divulgadas na Internet!!! Com o seu nome e todas
+    as outras informa‡äes que vocˆ quiser colocar sobre vocˆ.
+   Vocˆ pode fazer sucesso entre seus amigos :-)
+   Ou vocˆ pode simplesmente se divertir com jogando essas fases.
+
+  Pensou nas possibilidades? Agora vocˆ deve estar se perguntando: e como eu
+fa‡o uma fase para o Happy Christmas?
+  Bom, para comecar, o nome do arquivo do Editor de Fases ‚ LEVEDIT.EXE. Mas
+nÆo basta digitar LEVEDIT para entrar no editor. Vocˆ tem que digitar algo
+parecido com o seguinte:
+
+   LEVEDIT levelN.lev
+
+  Sendo que N ‚ o n£mero da fase. Vamos ver alguns exemplos:
+
+   LEVEDIT level01.lev
+      Edita a fase n§ 1
+   LEVEDIT level09.lev
+      Edita a fase n§ 9
+   LEVEDIT level15.lev
+      Edita a fase n§ 15
+
+  Para incluir uma fase ao jogo, sem modificar as j  existentes, basta
+executar o LEVEDIT, mas especificando o n£mero da fase + 1. Ou seja, se
+o jogo tem 16 fases, entao vocˆ deve escrever LEVEDIT level17.lev.
+
+  Muito bem, agora vocˆ j  conseguiu entrar no Editor de Fases. Resta saber o
+que vocˆ deve fazer l . Vocˆ precisa ter o mouse e o teclado funcionando
+para usar o editor de fases. Vou mostrar alguns comandos de teclado:
+
+   Teclas direcionais - move o cursor
+   Home               - desloca para a tela anterior (-19 casas)
+   PgUp               - desloca para a tela seguinte (+19 casas)
+   ENTER              - coloca o objeto selecionado no mapa
+   Tecla 5            - deleta o objeto do mapa
+   F1, F2 e F3        - Alterna os objetos entre Cen rio, Inimigos e Itens,
+                         respectivamente.
+   F5                 - salva (grava) a fase
+
+  Para selecionar um objeto, basta clicar nele com o mouse.
+  Isso ‚ tudo. Ou melhor, s¢ falta vocˆ usar sua criatividade.
+
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+    Û                     Happy Christmas                  ß°°°
+    °                                                        °°°
+   °°°                O jogo de Natal de 1997                ÛÛÛ
+  °°°°°                                                      ÛÛÛ
+   °°°        Feito por: Rodrigo Rocha Gomes e Souza        °°°°°°°°Û
+  °°°°°                                                    °°°°°°
+ °°°°°°° http://www.geocities.com/Athens/7159/hapyxmas.htm ÛÛÛÛÛÛ   ±±±
+  °°°°°                                                    °°°°°°°°±±±±  
+ °°°°°°°                   rod@svn.com.br                  °°°          
+°°°°°°°°°                                                  ±±±   
+   ±±±                                                     ±±±±±
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
