@@ -27,6 +27,7 @@
 #include "hapyxmas.h"
 #include "add.h"
 
+#define SCALE_FACTOR 3
 #define GAME_DELAY 75 /* Milliseconds per cicle */
 #define XSIZE 19      /* Max number of tiles in a row */
 #define YSIZE 12      /*  "    "    "    "    " a column */
@@ -139,6 +140,11 @@ int pwr[36] = {1,1,0,1,2,3,0,1,0,1,
                2,1,1,0,1,0,2,2,1,1,
                1,1,1,0,3,0};
 
+void my_stretch_blit(BITMAP *source, BITMAP *dest, int source_x, int source_y, int dest_x, int dest_y, int width, int height) {
+  stretch_blit(source, dest, source_x, source_y, width, height,
+    source_x * SCALE_FACTOR, source_y * SCALE_FACTOR, width * SCALE_FACTOR, height * SCALE_FACTOR);
+}
+
 int z1(int number1, int number2) {
 /*if (number2>16) return number1+1;else return number1;*/
 return number1+(number2/16);
@@ -177,7 +183,7 @@ if (exitcode==0) {
    play_midi(dat[midi34].dat,TRUE);
    // Display credits
    set_pallete(add[CREDPAL].dat);
-   blit(add[CREDITS].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+   my_stretch_blit(add[CREDITS].dat,screen,0,0,0,0,320,200);
    clear_keybuf();
    readkey();
    stop_midi();
@@ -186,16 +192,16 @@ if (exitcode==1) {
    clear(screen);
    play_midi(dat[midi34].dat,TRUE);
    set_pallete(add[ENDPAL].dat);
-   blit(add[END1].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+   my_stretch_blit(add[END1].dat,screen,0,0,0,0,320,200);
    clear_keybuf();
    readkey();
-   blit(add[END2].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+   my_stretch_blit(add[END2].dat,screen,0,0,0,0,320,200);
    clear_keybuf();
    readkey();
    // Display credits
    clear(screen);
    set_pallete(add[CREDPAL].dat);
-   blit(add[CREDITS].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+   my_stretch_blit(add[CREDITS].dat,screen,0,0,0,0,320,200);
    clear_keybuf();
    readkey();
    stop_midi();
@@ -377,7 +383,7 @@ for (yy=1;yy<=YSIZE;yy++){
    else
      blit(dat[map[XSIZE*player.x3-XSIZE+xx][yy]].dat,hs1,0,0,xx*16-15,(yy*16-15),16,16);
 }}}}}
-blit(hs1,hs2,0,0,0,0,SCREEN_W,SCREEN_H);
+blit(hs1,hs2,0,0,0,0,320,200);
 }
 
 void move_water() {
@@ -425,7 +431,7 @@ player.dir = 1;
 player.frame = 1;
 player.fire_flag=0;
 draw_scr();
-blit(hs1,hs2,0,0,0,0,SCREEN_W,SCREEN_H);
+blit(hs1,hs2,0,0,0,0,320,200);
 }
 
 void draw_hero(/*int x1, int x2, int dir*/) {
@@ -624,10 +630,10 @@ char buf[80];
 void help() {
 clear(screen);
 set_pallete(add[INSPAL].dat);
-blit(add[INS1].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+my_stretch_blit(add[INS1].dat,screen,0,0,0,0,320,200);
 clear_keybuf();
 readkey();
-blit(add[INS2].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+my_stretch_blit(add[INS2].dat,screen,0,0,0,0,320,200);
 readkey();
 clear(screen);
 }
@@ -643,20 +649,20 @@ FILE *arq;
         install_keyboard();
         install_timer();
         /**/
-set_gfx_mode(GFX_AUTODETECT, 320,200,0,0);  /* set video mode to VGA */
+set_gfx_mode(GFX_AUTODETECT_WINDOWED, 320*SCALE_FACTOR,200*SCALE_FACTOR,0,0);  /* set video mode to VGA */
 
 dat = load_datafile("hapyxmas.dat");
 add = load_datafile("add.dat");
 
 /* Initialize hidden screens */
-hs1 = create_bitmap(SCREEN_W,SCREEN_H); clear(hs1);
-hs2 = create_bitmap(SCREEN_W,SCREEN_H); clear(screen);
+hs1 = create_bitmap(320,200); clear(hs1);
+hs2 = create_bitmap(320,200); clear(screen);
 blank=create_bitmap(16,16); clear(blank);
 
 /* Initial Screen */
 set_pallete(add[INITPAL].dat);
 install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT,NULL); /* initialize */
-blit(add[INIT].dat,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+my_stretch_blit(add[INIT].dat,screen,0,0,0,0,320,200);
 //play_midi(dat[midi01].dat, TRUE); /* Play John Lennon's "Happy Christmas" */
 i=0;
 do {
@@ -741,7 +747,7 @@ for (;;) {
     draw_scr();
     }
 
-  blit(hs1,hs2,0,0,0,0,SCREEN_W,SCREEN_H);
+  blit(hs1,hs2,0,0,0,0,320,200);
 
 //  move_water();
   move_hero();
@@ -753,7 +759,7 @@ for (;;) {
   draw_hero();
   display_score();
 
-  blit (hs2,screen,0,0,0,0,SCREEN_W,SCREEN_H);
+  my_stretch_blit (hs2,screen,0,0,0,0,320,200);
   rest(GAME_DELAY);
 }
 
