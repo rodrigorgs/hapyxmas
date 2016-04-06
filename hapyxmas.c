@@ -663,7 +663,7 @@ blank=create_bitmap(16,16); clear(blank);
 set_pallete(add[INITPAL].dat);
 install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT,NULL); /* initialize */
 my_stretch_blit(add[INIT].dat,screen,0,0,0,0,320,200);
-//play_midi(dat[midi01].dat, TRUE); /* Play John Lennon's "Happy Christmas" */
+play_midi(dat[midi01].dat, TRUE); /* Play John Lennon's "Happy Christmas" */
 i=0;
 do {
 if (key[KEY_F1]) i=1;
